@@ -30,23 +30,32 @@
 
     handleUserData: function(data) {
       var strLastLogin = '';
-      var lastLogin = new Date('2016-03-28T20:22:22Z');//data.user.last_login_at);
+      var lastLogin = new Date(data.user.last_login_at);
       var difference = Math.abs(new Date() - lastLogin);
       var dayMilliseconds = 86400000;
       var hourMilliseconds = 3600000;
-      var total = Math.round(difference/hourMilliseconds);
-      if (total > 25) {
+      var minuteMilliseconds = 60000;
+      var total = Math.round(difference/minuteMilliseconds);
+      
+      if (total > 1439) {
         total = Math.round(difference/dayMilliseconds);
         if (total == 1) {
           strLastLogin = total + ' day ago';
         } else {
           strLastLogin = total + ' days ago';
         }
-      } else {
+      } else if (total > 59) {
+        total = Math.round(difference/hourMilliseconds);
         if (total == 1) {
           strLastLogin = total + ' hour ago';
         } else {
           strLastLogin = total + ' hours ago';
+        }
+      } else {
+        if (total < 2) {
+          strLastLogin = '1 minute ago';
+        } else {
+          strLastLogin = total + ' minutes ago';
         }
       }
 
