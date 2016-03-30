@@ -1,0 +1,17 @@
+
+<header>
+  <span class="logo"></span>
+  <h3>{{setting "name"}}</h3>
+</header>
+<section class="navigation">
+  <ul class="search_user">
+    <li>
+      <label for="id">{{t "id"}}</label>
+      <input class="id" name="id" type="text" id="id"/>
+      <button class="search_user_bt btn btn-inverse" >{{t "search"}}</button>
+    </li>
+  </ul>
+  </br>
+  <div class="loading_spinner">{{spinner}}</div>
+</section>
+<section class="main" data-main></section>

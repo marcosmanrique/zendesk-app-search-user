@@ -1,0 +1,41 @@
+{
+  "app": {
+    "description": "Play the famous zen tunes in your help desk.",
+    "name": "Buddha Machine"
+  },
+  "loading": "Welcome to this Sample App",
+  "fetch": {
+    "done": "Good",
+    "fail": "failed to fetch information from the server"
+  },
+  "id": {
+    "value": "Id",
+    "title": "Id"
+  },
+  "name": {
+    "value": "Name",
+    "title": "Name"
+  },
+  "email": {
+    "value": "Email",
+    "title": "Email"
+  },
+  "role": {
+    "value": "Role",
+    "title": "Role"
+  },
+  "created": {
+    "value": "Created on",
+    "title": "Created on"
+  },
+  "last": {
+    "value": "Last login",
+    "title": "Last login"
+  },
+
+  "search": {
+    "value": "Search",
+    "title": "Search user"
+  }
+
+}

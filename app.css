@@ -1,0 +1,28 @@
+h4, h5 {
+  border-bottom: 1px dotted #cccccc;
+  margin-top: 20px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+p {
+  margin: 10px 0 12px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.loading {
+  opacity: 0.5;
+}
+
+.loading_spinner {
+  display: none;
+}
+
+.label_user {
+  padding-right: 25px;
+}
